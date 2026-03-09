@@ -1,0 +1,397 @@
+
+\documentclass[12pt]{article}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\fontsize{16}{18}\bfseries}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\fontsize{14}{16}\bfseries}
+{\thesubsection}{1em}{}
+% --- XeLaTeX: Multilingual and Malayalam support ---
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage[printonlyused]{acronym}
+\setdefaultlanguage{english}
+\setotherlanguage{malayalam}
+\newfontfamily\malayalamfont[Script=Malayalam]{Noto Serif Malayalam}
+\newcommand{\ml}[1]{{\begin{malayalam}#1\end{malayalam}}}
+\usepackage{hyperref}
+
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{adjustbox}
+\definecolor{lightgray}{gray}{0.9}
+
+% --- font ---
+
+
+% --- Formatting packages ---
+\usepackage{parskip}
+\usepackage{booktabs} % For better table formatting
+
+\usepackage[backend=biber, style=ieee, giveninits=false]{biblatex}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+% --- Title formatting ---
+\titleformat{\section}[block]{\Large\bfseries}{\thesection}{1em}{}
+
+% --- Header and Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+% --- BibLaTeX resource ---
+\addbibresource{References.bib}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.3\textwidth]{VDU.png} % Make sure there’s no space in filename
+    \end{figure}
+
+    \vspace{0.25cm}
+    {\LARGE VYTAUTAS MAGNUS UNIVERSITY\par}
+    \vspace{0.4cm}
+    {\Large FACULTY OF INFORMATICS\par}
+    \vspace{0.15cm}
+    {\Large DEPARTMENT OF APPLIED INFORMATICS\par}
+
+    \vspace{1.5cm}
+    {\LARGE Zulkifil Dawood\par}
+    \vspace{1cm}
+
+    {\LARGE \bfseries  Morphology-Aware Tokenization for Malayalam: Design and Evaluation\par}
+    \vspace{1cm}
+    {\LARGE Master Thesis\par}
+    \vspace{0.75cm}
+    Applied Informatics Study Programme\\
+    Study field: Informatics\\
+    Student ID: MIF240017\\
+
+    \vspace{0.75cm}
+    \textbf{Supervisor:} Prof. Mindaugas Petkevičius\\ 
+    \vspace{0.1cm}
+    {\footnotesize (Professor, Faculty of Informatics)\par}
+    \vspace{0.3cm}
+    \textbf{Defended:} Prof. Dr. Tomas Krilavičius\\
+    \vspace{0.1cm}
+    {\footnotesize (Dean of Faculty)\par}
+
+    \vspace{1cm}
+    Kaunas, May 2026
+
+    \vfill
+\end{titlepage}
+
+\newpage
+\onecolumn
+\tableofcontents
+\newpage
+\section*{List of Abbreviation}
+\addcontentsline{toc}{section}{Abbreviation}
+\begin{description}
+  \item[NLP] : Natural Language Processing 
+  \item[G2P]: Grapheme-to-Phoneme
+  \item[PII]: Personally Identifiable Information
+  \item[JSONL]: Javascript Object Notation Lines 
+  \item[SOV]: Subject–Object–Verb
+  \item[OSV]: Object–Subject–Verb 
+  \item[BRAT]: brat rapid annotation tool 
+  \item[LOLI]: lexically-only items
+  \item[LIBSVM] library for support vector machines
+\end{description}
+\newpage
+
+
+\section*{Summary}
+\addcontentsline{toc}{section}{Summary}
+\renewcommand\arraystretch{1.3} % more line‐spacing in rows
+\noindent
+\begin{tabular}{@{} >{\bfseries}p{4cm} p{\dimexpr\textwidth-4cm}@{}}
+Author:          & Zulkifil Dawood          \\ 
+Title:           &  Morphology-Aware Tokenization for Malayalam: Design and Evaluation\\ 
+Supervisor:      & Prof. Mindaugas Petkevičius           \\ 
+Presented at:    & Vytautas Magnus University,    \\
+                 & Faculty of Informatics, Kaunas \\ 
+                 & 29 May 2026                         \\ 
+Number of pages: & 30                             \\ 
+\end{tabular}
+\newpage
+
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+\section*{Literature Review}
+\addcontentsline{toc}{section}{Literature Review}
+Malayalam, a major Dravidian language spoken by approximately 38 million individuals, primarily in the Indian state of Kerala and its global diaspora, represents one of the most significant challenges in contemporary natural language processing. The language is characterized by an intricate morphological framework defined by profound agglutination and extensive inflectional mechanisms. In agglutinative languages, surface word forms are constructed by concatenating multiple morphemes, each carrying distinct grammatical or semantic information.\cite{klein2024rethinking} A single orthographic Malayalam word can encode a complex array of information, including case, number, person, tense, aspect, mood, and postpositions, often corresponding to an entire phrase or clause in fusional languages such as English.
+
+This agglutinative structure induces a fundamental tension in tokenization. Under-segmentation, where long agglutinative forms are treated as single tokens, leads to unwieldy vocabularies and extreme data sparsity. Conversely, over-segmentation through standard subword algorithms often fragments morphologically coherent units into semantically opaque pieces, distorting the internal dependencies and hindering model interpretability. The morphological richness of Malayalam significantly contributes to this data sparsity, as neural models must learn from a vast array of surface forms generated from relatively few root morphemes. For example, the verb root 'run' \ml{(ഓടുക)} can manifest in numerous variants such as 'ran' \ml{(ഓടിയത്)}, 'is causing to run' \ml{(ഓടിക്കുന്നു)}, and 'to cause to run' \ml{(ഓടിപ്പിക്കാൻ)}.
+
+The Malayalam case system further complicates this landscape. The language typically marks seven or eight distinct cases, and the agglutinative nature renders it difficult to establish clear-cut distinctions without deep morphological analysis. These case markers are appended as suffixes to nouns, and the resulting phonological changes at the boundaries, known as sandhi, often alter the root or suffix form./cite{praveen2019malayalam} \cite{vinayakumar2018malayalam}
+
+The table below summarizes the core case markers and their functions in Malayalam, highlighting the suffixation challenges for tokenizers.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{llll}
+\toprule
+\textbf{Case Category} & \textbf{Typical Suffix} & \textbf{Semantic Function} & \textbf{Example Inflection} \\
+\midrule
+Nominative   & (Null)           & Subject          & maraM (tree) \\
+Accusative   & -e, -ye          & Direct Object    & maratthe (the tree) \\
+Dative       & -inu, -nu, -u    & Indirect Object  & maratthin (to the tree) \\
+Instrumental & -al              & Means/Instrument & maratthal (by the tree) \\
+Sociative    & -otu             & Association      & maratthotu (with the tree) \\
+Locative     & -il, -kal        & Location         & maratthil (in the tree) \\
+Genitive     & -ute, -nte       & Possession       & maratthinte (of the tree) \\
+\bottomrule
+\end{tabular}
+\caption{Malayalam Case Markers and Their Functions}
+\label{tab:malayalam_cases}
+\end{table}
+
+
+Beyond nominal inflections, Malayalam exhibits productive compounding, full and partial reduplication, and the attachment of clitics and postpositions without intervening whitespace. Reduplicated forms often express intensity or distribution (e.g., 'slowly-slowly'), while compound verbs can encode aspectual nuances that are easily lost if a tokenizer arbitrarily cuts across the verbal elements. The syntactic flexibility of Malayalam, which permits both Subject-Object-Verb (SOV) and Object-Subject-Verb (OSV) orders, places the burden of meaning on these morphological markers, making their preservation during tokenization a primary objective for natural language understanding tasks.
+
+\subsection{The Impact of Orthographic Reform on Digital Text Representation}
+
+The representation of Malayalam in digital environments is inextricably linked to its orthographic history. The Malayalam script, an alphasyllabary or abugida derived from the Brahmi script via Grantha, has historically utilized a complex system of consonant-consonant and consonant-vowel ligatures. In 1971, the Government of Kerala introduced an orthography reform aimed at simplifying the script for modern printing technologies. This reform reduced the number of complex ligatures and standardized certain vowel and consonant combinations, creating a lasting dichotomy in digital text.
+
+From a computational perspective, this historical evolution yields several layers of complexity. Modern digital corpora often contain a mix of traditional and reformed orthographic practices, leading to multiple graphical realizations for the same underlying linguistic sequence. This inconsistency is exacerbated by varied Unicode usage, where older documents and user-generated content may encode identical graphemes using different sequences. The variation in visible virama and chillu characters (special independent consonants) frequently confuses normalization heuristics and tokenizers operating at the character or subword level.
+
+Furthermore, spacing practices in Malayalam are not always consistent with lexical boundaries. While modern writing typically separates words with spaces, the number of characters between spaces remains high in agglutinative constructions. In informal registers, such as social media or conversational blogs, spaces may correspond more to phonological pauses than strict lexical units. Writers frequently vary their spacing around clitics and particles, making whitespace an unreliable indicator of token boundaries. Any attempt at robust tokenization must therefore incorporate a pre-tokenization normalization layer that addresses Unicode NFC standards and orthographic variation to prevent the inflation of vocabulary through spurious token types.
+
+\addcontentsline{toc}{section}{Methodology}
+
+\addcontentsline{toc}{section}{Implementation}
+
+\addcontentsline{toc}{section}{Result and Analysis}
+
+\addcontentsline{toc}{section}{Dicussion}
+\addcontentsline{toc}{section}{Conclusion}
+
+\subsection{Theoretical Frameworks of Subword Tokenization Algorithms}
+The transition from word-level to subword tokenization has defined the modern era of neural sequence modeling. Word-level tokenization, while linguistically intuitive, suffers from unmanageable vocabulary sizes and the inability to handle out-of-vocabulary (OOV) terms, which are ubiquitous in morphologically rich languages like Malayalam. Subword algorithms aim to balance vocabulary efficiency with representational coverage by segmenting rare words into frequent subunits.   
+
+\subsubsection{Byte Pair Encoding (BPE) and WordPiece}
+
+Byte Pair Encoding (BPE), originally developed for data compression, was adapted for natural language processing to enable open-vocabulary modeling. BPE operates through a greedy, iterative merging process, starting with individual characters and merging the most frequent adjacent symbol pairs until a predefined vocabulary size is reached. While efficient for high-resource languages with concatenative morphology, BPE is fundamentally agnostic to linguistic boundaries. In the context of Malayalam, BPE merge decisions are driven by statistical frequency rather than morpheme structure, often resulting in splits that cut across critical semantic units, especially in long suffix chains.   
+
+WordPiece follows a similar iterative merging logic but optimizes for a likelihood-based objective. It calculates a score for each pair based on its joint frequency relative to the product of individual frequencies, aiming to identify subwords that maximize the probability of the training data. During inference, WordPiece employs a longest-match-first strategy. Like BPE, WordPiece is prone to fragmentation in agglutinative languages, as it prioritizes statistically frequent character clusters that may not align with the functional morphemes of the language.   
+
+\subsubsection{Unigram Language Model and SentencePiece}
+
+The Unigram language model takes a probabilistic approach, reframing tokenization as a generative process. It starts with a large initial vocabulary and iteratively prunes subwords with low likelihood using the Expectation-Maximization (EM) algorithm. Given an input string x, Unigram searches for the optimal segmentation s* that maximizes the joint probability:   
+
+\[
+P(s) = \prod_{j=1}^{n} P(v_{i_j})
+\]
+
+where v represents tokens from the vocabulary V. This approach allows for multiple valid segmentations, making it more flexible and often more linguistically aligned than deterministic merge-based methods. Viterbi dynamic programming is typically used for efficient decoding. SentencePiece, a widely adopted implementation, can employ either BPE or Unigram objectives and treats whitespace as a regular character, enabling language-independent processing. Despite its sophistication, recent research indicates that Unigram still struggles with the high type-to-token ratio of agglutinative languages, often failing to reach "near-perfect" accuracy without explicit morphological guidance.
+
+\subsection{The Paradox of Statistical Frequency vs Linguistic Integrity}
+
+A central challenge in Malayalam NLP is the misalignment between machine efficiency and human interpretability. Tokenization strategies optimized for statistical likelihood often produce segmentations that native speakers find unnatural or semantically distorting. This disparity is particularly evident in the "fertility" of tokenizers—the average number of tokens produced per word form. Languages with rich morphology, such as Malayalam and Telugu, exhibit significantly higher fertility rates in standard multilingual tokenizers (e.g., XLM-R, mBERT) compared to high-resource languages like English.   
+
+High fragmentation—measured through Word Fragmentation Rate (WFR) and average token fertility—imposes several hidden costs on neural models. First, it increases the sequence length, inflating the computational memory and time required for processing due to the quadratic complexity of the attention mechanism in Transformers. Second, excessive fragmentation "wastes" the model's limited context window, effectively reducing the amount of semantic information the model can process simultaneously. Third, it destroys the internal dependencies of agglutinative word forms, forcing the model to reconstruct semantic meaning from opaque sub-units rather than coherent morphemes.   
+
+Research into "Tokenization Parity" (TP) and "Information Parity" (IP) has highlighted these systemic biases. TP measures the ratio of tokenized lengths for parallel content across languages, revealing that low-resource and morphologically complex languages often face a "length premium". Information Parity, which assesses how well an LLM compresses content relative to a reference, has been found to be a better predictor of performance in semantic tasks like topic classification. For Malayalam, these representational biases mean that standard BPE-based models are intrinsically disadvantaged, reinforcing the need for morphology-aware interventions.   
+
+
+Emerging Morphology-Aware Paradigms: MorphBPE and Beyond
+
+To address the limitations of purely data-driven tokenization, recent scholarly work has focused on integrating linguistic structure into the subword learning process. These "hybrid" approaches utilize rule-based or supervised morphological analysis to constrain the statistical segmentation of the corpus.   
+
+Technical Architecture of MorphBPE
+
+Introduced in late 2024 and refined in early 2025, MorphBPE represents a state-of-the-art morphology-aware extension of the BPE algorithm. Its technical implementation hinges on a modified merge criterion that incorporates morpheme boundary annotations. While vanilla BPE merges solely based on raw frequency $f(c_i c_j)$, MorphBPE employs a merge score $S_\lambda$ that rewards within-morpheme merges and penalizes boundary crossings:   
+
+\[
+S_\lambda(c_i, c_j) = f(c_i c_j) + \lambda m(c_i, c_j) - \mu b(c_i, c_j)
+\]
+  
+where $m(c_i, c_j)$ is a reward for merges that do not cross an annotated boundary, and 
+ $b(c_i, c_j)$ is a penalty for crossing a boundary. This architecture ensures that the subword vocabulary captures common morphological patterns and preserves meaningful roots and affixes. Crucially, the inference-time tokenizer remains identical to standard BPE, ensuring "drop-in" compatibility with existing LLM training pipelines such as Llama or Gemma. Empirical evaluations on agglutinative languages like Hungarian and Arabic have shown that MorphBPE significantly reduces cross-entropy loss and accelerates training convergence, reaching reference validation losses up to 29% faster than vanilla BPE
+
+\subsection{Multi-Grain and Hybrid Indic Tokenization}
+
+In the Indic context, the IndicSuperTokenizer (2026) has introduced a multi-grain approach that combines subword and multi-word tokenization with language-specific pre-tokenization. By aligning tokens with the unique morphological variations of Indian languages, this system has achieved a new state-of-the-art in fertility scores, improving average fertility by nearly 40\% over standard Llama-based tokenizers. Similarly, research on Telugu has demonstrated that hybrid tokenizers, which use unsupervised morphological segmenters like Morfessor or rule-based analyzers for pre-segmentation, significantly boost the performance of the BPE framework. These developments suggest a clear scholarly progression toward "linguistically informed" pre-processing as a foundational requirement for equitable Dravidian NLP.
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l X X X}
+\toprule
+\textbf{Algorithm} & \textbf{Merging Principle} & \textbf{Linguistic Awareness} & \textbf{Best Use Case} \\
+\midrule
+
+Standard BPE 
+& Frequency-based greedy merge 
+& None 
+& High-resource analytic languages \\
+
+Unigram 
+& Probabilistic pruning (EM) 
+& Latent/Probabilistic 
+& Multilingual general-purpose models \\
+
+MorphBPE 
+& Frequency with boundary penalty 
+& High (explicit morpheme constraints) 
+& Agglutinative and templatic languages \\
+
+IndicSuperTokenizer 
+& Multi-grain tokenization with pre-tokenization 
+& High (language-specific rules) 
+& Low-resource Indic and Dravidian languages \\
+
+\bottomrule
+\end{tabularx}
+\caption{Comparison of tokenization algorithms}
+\end{table}
+
+\subsection{Intrinsic Metrics and the Fertility Disparity in Dravidian NLP}
+While human judgment remains the definitive standard, intrinsic metrics provide the diagnostic tools necessary for technical optimization. In morphologically rich languages (MRLs), simple metrics like Word Fragmentation Rate (WFR) and fertility are essential for quantifying representational bias.   
+
+Fragmentation and Cross-Lingual Fairness
+
+Recent benchmarks have highlighted a severe "fertility disparity" between high-resource and low-resource languages. Fertilty, defined as the average number of tokens per word form, serves as a proxy for both computational cost and representational quality. For parallel text, a tokenizer achieves "Tokenization Parity" (TP) if the ratio of tokenized lengths across languages is approximately one. Multilingual models like Llama and GPT often exhibit TP values significantly higher than one for Dravidian languages relative to English, indicating a "length premium" that disadvantages these languages in terms of cost and attention capacity.
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{l X X}
+\toprule
+\textbf{Metric} & \textbf{Definition} & \textbf{Malayalam Context} \\
+\midrule
+
+Word Fragmentation Rate (WFR) 
+& Percentage of words split into more than one token 
+& High in BPE due to complex suffixation \\
+
+Average Token Fertility 
+& Number of tokens generated per word form 
+& Crucial for sequence length optimization \\
+
+Tokenization Parity (TP) 
+& $t(s_{\text{Malayalam}})$ 
+& Measures balance across tokenization strategies \\
+
+Information Parity (IP) 
+& Relative compression efficiency 
+& Predicts semantic task performance \\
+
+\bottomrule
+\end{tabularx}
+\caption{Evaluation metrics for tokenization in the Malayalam context}
+\end{table}
+
+Intrinsic Reliability and Downstream Predictability
+
+Scholarly research has debated whether better morphological alignment—the degree to which tokens correspond to true morphemes—directly predicts better model performance. A 2025 large-scale study covering 70 languages found that while morphological alignment does not explain all the variance in model performance, it remains a significant predictor for tasks reliant on syntactic and morphological cues. For Telugu and Malayalam, intrinsic metrics such as Boundary Precision and Boundary Recall have shown moderate positive correlations with performance in structure prediction tasks like POS tagging and Dependency Parsing.   
+
+However, the "Rethinking Tokenization" study (2025) suggests that the tokenizer algorithm (BPE vs. Unigram) may be even more influential than alignment alone. This implies that for a hybrid Malayalam framework, selecting the underlying algorithm and then applying morphological constraints is the most effective strategy. The relationship between intrinsic metrics and topic classification—a primary research goal for the proposed thesis—will be critical for determining whether "morphological shielding" provides measurable benefits beyond traditional subword segmentation.   
+
+Downstream Applications: Topic Classification and Fake News Detection
+The evaluation of tokenization for Malayalam must ultimately be validated through its impact on downstream Natural Language Understanding (NLU) tasks. Topic classification is a foundational NLU task, requiring the model to classify text into semantic categories such as "science," "politics," or "health". Recent benchmarks like SIB-200 (2024), based on the Flores-200 multi-way parallel corpus, provide essential evaluation data for over 200 languages, including Malayalam.   
+
+Transformer Performance in Malayalam Text Classification
+
+Contemporary research on Malayalam text classification has focused on fine-tuning multilingual transformer models like XLM-RoBERTa, mBERT, and MuRIL. In fake news detection tasks using YouTube comments, models have achieved F1 scores up to 0.87 for binary classification and 0.62 for multiclass labeling. These systems often employ Multi-Pooling Feature Fusion (MPFF) architectures—leveraging tokens along with mean and max pooling—to mitigate the loss of information caused by subword fragmentation.   
+
+MuRIL and IndicBERT, pre-trained specifically on Indian languages, have been found to inherently capture morpho-syntactic variations and case markers better than general multilingual models like mBERT. Furthermore, explainable AI (XAI) methods such as LIME, Anchor, and Occlusion have confirmed that these transformer models effectively capture keywords relevant for classification, demonstrating a high degree of overlap even in complex, code-mixed Malayalam text.   
+
+Topic Classification as a Stress Test for Tokenization
+
+Topic classification is particularly sensitive to tokenization because it requires the model to neutralize surface-level differences, such as inflected word forms, to recognize a common lemma or semantic concept. Information Parity (IP), which measures representational efficiency across languages, has been shown to be a stronger predictor of performance in semantic tasks like topic classification than simple token counts.   
+
+For Malayalam, a morphology-aware hybrid tokenizer is expected to improve semantic representation by ensuring that the "roots" of words—which carry the primary topical information—are preserved consistently across different inflected forms. If a standard BPE tokenizer splits the same root differently across various sentences (e.g., 'pustakam' vs 'pustakangalil'), the model must learn to associate these different token sequences with the same topic, increasing the training complexity. A "morphologically shield" BPE pipeline avoids this by enforcing consistent root preservation.   
+
+Intra-Word Code-Switching and Morphological Adaptation
+A defining characteristic of modern Malayalam digital dialogue is code-switching, particularly English-Malayalam intra-word switching. This linguistic hybridity occurs when English lexical items are incorporated into Malayalam's morphological framework, requiring phonological and morphological adaptation to ensure grammatical consistency.   
+
+Patterns of Morphological Incorporation
+
+In intra-word code-switching, English roots serve as the base for Malayalam suffixation. Examples documented in conversational corpora include:   
+
+"director-inte" (director's): The English root "director" + Malayalam possessive suffix "inte".   
+
+"point-ukal" (points): The English root "point" + Malayalam plural suffix "ukal", with the insertion of an epenthetic vowel 'u' to bridge the phonological gap between the English terminal 't' and Malayalam 'kal'.   
+
+"kuttikal-s" (children's): A reverse switch where the Malayalam root "kuttikal" (children) is combined with the English plural marker "s".   
+
+This asymmetry—where English roots more frequently adopt Malayalam morphology than the reverse—reflects the sociolinguistic prestige of English and its role as a source of technical and modern vocabulary in Kerala. For tokenization, these hybrid units are highly problematic. Standard tokenizers trained on monolingual corpora often treat these as "unknown" sequences, fragmenting them into arbitrary pieces.   
+
+The Role of Morphology-Aware Hybrid Tokenization in Code-Mixed Text
+
+Developing robust NLP systems for code-mixing requires tokenizers that can handle these cross-linguistic blends. Rule-based morphological analyzers can identify the English root and separate the Malayalam suffix, providing a coherent representation for downstream tasks. Hybrid tokenization, by incorporating these morphological "sandhi" rules into the subword segmentation process, can better represent these blended forms. This is essential for sentiment analysis, intent detection, and offensive language classification in social media, where code-mixing is the norm rather than the exception.   
+
+\subsection{The Morphological Shield: Formalizing a Hybrid Constraint Layer
+}
+The proposed master thesis formalizes a "morphological shield" as a pre-tokenization constraint layer designed to reduce the fragmentation of agglutinative Malayalam word forms. This framework represents a systematic attempt to bridge the gap between rule-based linguistic preservation and standard BPE statistical efficiency under fixed vocabulary conditions.   
+
+\subsubsection{Linguistic Framework and Rule Formalization}
+
+The first task in this framework is the formalization of a computationally feasible set of morphological rules. These rules target high-frequency agglutinative structures, including:   
+
+\textbf{Suffix Stacking:} Identifying and preserving the sequence of plural markers and case suffixes appended to noun roots.   
+
+\textbf{Inflectional Endings:} Protecting the verbal tense, aspect, and mood markers that are vital for syntactic clarity.   
+
+\textbf{Selected Compound Constructions:} Maintaining the integrity of productive noun-noun and verb-verb compounds that represent single semantic units.   
+
+These rules are implemented as a pre-segmentation layer. Instead of attempting full morphological analysis, the shield uses a "suffix stripping" or "paradigm-based" approach to identify morpheme boundaries. The BPE merge process is then constrained: it is prohibited from merging character pairs that cross these identified boundaries.   
+
+Controlled Experimental Design
+
+To ensure statistical robustness, the framework compares two vocabularies trained under identical conditions: standard BPE and the morphology-aware hybrid BPE. By controlling for corpus (CC100 Malayalam), vocabulary size (e.g., 32k or 16k), and training parameters, the study isolates the effect of morphological boundary preservation.   
+
+The intrinsic evaluation computes metrics such as WFR, token fertility, and morph-boundary violation rate. The downstream performance is assessed through a neural topic classification task using a lightweight Transformer-based model (e.g., XLM-RoBERTa base). This dual-track evaluation addresses the thesis's core research question: whether linguistically-informed improvements in tokenization quality correspond to statistically measurable differences in downstream neural classification performance.   
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{l X X}
+\toprule
+\textbf{Framework Task} & \textbf{Implementation Goal} & \textbf{Evaluation Metric} \\
+\midrule
+
+Rule Formalization 
+& Identify root and suffix boundaries 
+& Boundary Precision/Recall \\
+
+Hybrid Tokenizer Design 
+& Constrain BPE merge steps 
+& Morphological Alignment (MorphScore) \\
+
+Intrinsic Evaluation 
+& Quantify fragmentation changes 
+& Word Fragmentation Rate (WFR), Token Fertility \\
+
+Downstream Task 
+& Train topic classifier 
+& Macro-F1, convergence stability \\
+
+\bottomrule
+\end{tabularx}
+\caption{Framework tasks, implementation goals, and evaluation metrics}
+\end{table}
+
+\newpage
+
+
+\printbibliography
+
+\end{document}
