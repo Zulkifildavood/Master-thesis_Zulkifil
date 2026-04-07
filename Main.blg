@@ -1,0 +1,27 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'Main.blg'
+[38] biber-darwin:342> INFO - === Sat Apr  4, 2026, 18:30:06
+[47] Biber.pm:421> INFO - Reading 'Main.bcf'
+[91] Biber.pm:1002> INFO - Found 30 citekeys in bib section 0
+[99] Biber.pm:4487> INFO - Processing section 0
+[104] Biber.pm:4678> INFO - Looking for bibtex file 'References.bib' for section 0
+[105] bibtex.pm:1713> INFO - LaTeX decoding ...
+[123] bibtex.pm:1519> INFO - Found BibTeX data source 'References.bib'
+[225] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[225] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[226] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[226] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[238] bbl.pm:676> INFO - Writing 'Main.bbl' with encoding 'UTF-8'
+[245] bbl.pm:779> INFO - Output to Main.bbl
+[245] Biber.pm:132> WARN - Duplicate entry key: 'rana2025indicsupertokenizer' in file 'References.bib', skipping ...
+[245] Biber.pm:132> WARN - Duplicate entry key: 'sharma2025multilingual' in file 'References.bib', skipping ...
+[245] Biber.pm:132> WARN - Duplicate entry key: 'asgari2025morphbpe' in file 'References.bib', skipping ...
+[245] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/ml/g2gyd4_55d15rpqtd9f6t_dm0000gn/T/biber_tmp_Oel5/2c752702d164267d08a8792d4ccaec82_71531.utf8, line 2, warning: 35 characters of junk seen at toplevel
+[245] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/ml/g2gyd4_55d15rpqtd9f6t_dm0000gn/T/biber_tmp_Oel5/2c752702d164267d08a8792d4ccaec82_71531.utf8, line 45, warning: 34 characters of junk seen at toplevel
+[245] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/ml/g2gyd4_55d15rpqtd9f6t_dm0000gn/T/biber_tmp_Oel5/2c752702d164267d08a8792d4ccaec82_71531.utf8, line 103, warning: 38 characters of junk seen at toplevel
+[245] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/ml/g2gyd4_55d15rpqtd9f6t_dm0000gn/T/biber_tmp_Oel5/2c752702d164267d08a8792d4ccaec82_71531.utf8, line 133, warning: 45 characters of junk seen at toplevel
+[245] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/ml/g2gyd4_55d15rpqtd9f6t_dm0000gn/T/biber_tmp_Oel5/2c752702d164267d08a8792d4ccaec82_71531.utf8, line 158, warning: 15 characters of junk seen at toplevel
+[245] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/ml/g2gyd4_55d15rpqtd9f6t_dm0000gn/T/biber_tmp_Oel5/2c752702d164267d08a8792d4ccaec82_71531.utf8, line 173, warning: 8 characters of junk seen at toplevel
+[245] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/ml/g2gyd4_55d15rpqtd9f6t_dm0000gn/T/biber_tmp_Oel5/2c752702d164267d08a8792d4ccaec82_71531.utf8, line 203, warning: 7 characters of junk seen at toplevel
+[245] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/ml/g2gyd4_55d15rpqtd9f6t_dm0000gn/T/biber_tmp_Oel5/2c752702d164267d08a8792d4ccaec82_71531.utf8, line 221, warning: 11 characters of junk seen at toplevel
+[245] Biber.pm:134> INFO - WARNINGS: 11

@@ -1,0 +1,24 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{Abbreviation}{2}{Doc-Start}%
+\contentsline {section}{Summary}{3}{Doc-Start}%
+\contentsline {section}{Abstract}{4}{Doc-Start}%
+\contentsline {section}{Literature Review}{5}{Doc-Start}%
+\contentsline {subsection}{\numberline {0.1}The Morphological Landscape of Malayalam}{6}{subsection.0.1}%
+\contentsline {subsection}{\numberline {0.2}Sandhi Rules and Morphophonemic Alternations }{7}{subsection.0.2}%
+\contentsline {subsection}{\numberline {0.3}Orthographic Evolution and Digital Representation Challenges }{7}{subsection.0.3}%
+\contentsline {subsection}{\numberline {0.4}Intra-Word Code-Switching and Morphological Adaptation }{8}{subsection.0.4}%
+\contentsline {subsection}{\numberline {0.5}Methods, Approaches, and Technologies }{9}{subsection.0.5}%
+\contentsline {subsubsection}{\numberline {0.5.1}Theoretical Frameworks of Subword Tokenization Algorithms }{9}{subsubsection.0.5.1}%
+\contentsline {subsubsection}{\numberline {0.5.2}The "Token Tax" and Representational Bias}{10}{subsubsection.0.5.2}%
+\contentsline {subsubsection}{\numberline {0.5.3}Intrinsic Evaluation Metrics for Tokenization Quality }{11}{subsubsection.0.5.3}%
+\contentsline {subsubsection}{\numberline {0.5.4}Lightweight Transformer Architectures for Malayalam Deployment }{12}{subsubsection.0.5.4}%
+\contentsline {subsection}{\numberline {0.6}Advancements in Morphology-Aware Tokenization}{12}{subsection.0.6}%
+\contentsline {subsection}{\numberline {0.7}Algorithmic Dominance, Alignment, and Predictability}{13}{subsection.0.7}%
+\contentsline {subsection}{\numberline {0.8}Datasets, Benchmarks, and Downstream Task Performance}{13}{subsection.0.8}%
+\contentsline {subsection}{\numberline {0.9}Research Gaps and Motivation }{14}{subsection.0.9}%
+\contentsline {section}{Methodology}{16}{table.6}%
+\contentsline {subsubsection}{\numberline {0.9.1}The Morphology-Aware Hybrid Framework }{16}{subsubsection.0.9.1}%
+\contentsline {section}{Methodology}{17}{Item.8}%
+\contentsline {section}{Result and Analysis}{18}{Item.8}%
+\contentsline {section}{Discussion}{18}{Item.8}%
+\contentsline {section}{Conclusion}{18}{Item.8}%

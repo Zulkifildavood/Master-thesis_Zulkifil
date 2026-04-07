@@ -1,0 +1,1245 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{sennrich-etal-2016-neural}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=dbb9225ae208939ef2c5eec31d16922a}{%
+           family={Sennrich},
+           familyi={S\bibinitperiod},
+           given={Rico},
+           giveni={R\bibinitperiod}}}%
+        {{hash=34bf39cab57292ffa4ca1f5a851b64f0}{%
+           family={Haddow},
+           familyi={H\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bf98d70c7173a46aa44c19b423633312}{%
+           family={Birch},
+           familyi={B\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{31dfc645287253bc6e6016ef2d9f0894}
+      \strng{fullhash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{fullhashraw}{e309ceeb2dd0153b77437835a108df80}
+      \strng{bibnamehash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authorbibnamehash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authornamehash}{31dfc645287253bc6e6016ef2d9f0894}
+      \strng{authorfullhash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authorfullhashraw}{e309ceeb2dd0153b77437835a108df80}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}
+      \field{title}{Neural Machine Translation of Rare Words with Subword Units}
+      \field{year}{2016}
+      \field{pages}{1715\bibrangedash 1725}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb https://aclanthology.org/P16-1162/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/P16-1162/
+      \endverb
+    \endentry
+    \entry{thottingal2019mlmorph}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=75ca490dd8835d6ea020693354083c43}{%
+           family={Thottingal},
+           familyi={T\bibinitperiod},
+           given={Santhosh},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dublin, Ireland}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{75ca490dd8835d6ea020693354083c43}
+      \strng{fullhash}{75ca490dd8835d6ea020693354083c43}
+      \strng{fullhashraw}{75ca490dd8835d6ea020693354083c43}
+      \strng{bibnamehash}{75ca490dd8835d6ea020693354083c43}
+      \strng{authorbibnamehash}{75ca490dd8835d6ea020693354083c43}
+      \strng{authornamehash}{75ca490dd8835d6ea020693354083c43}
+      \strng{authorfullhash}{75ca490dd8835d6ea020693354083c43}
+      \strng{authorfullhashraw}{75ca490dd8835d6ea020693354083c43}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2nd Workshop on Technologies for MT of Low Resource Languages}
+      \field{title}{Finite State Transducer based Morphology analysis for Malayalam Language}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{urlraw}
+      \verb https://aclanthology.org/W19-6801/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/W19-6801/
+      \endverb
+    \endentry
+    \entry{devadath2014sandhi}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=0bdf52bd679e9cde720c0e220b3b12f7}{%
+           family={V.},
+           familyi={V\bibinitperiod},
+           given={Devadath\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=c01b1a3198697067de1eb36e79069575}{%
+           family={Kurisinkel},
+           familyi={K\bibinitperiod},
+           given={Litton\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4b9dc3aa0da08972d6685a8adc2132d2}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Dipti\bibnamedelima Misra},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2aa2acc782f22c7720d5b854573e0c6d}{%
+           family={Varma},
+           familyi={V\bibinitperiod},
+           given={Vasudeva},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Goa, India}%
+      }
+      \strng{namehash}{3df05c27e4a29249525905300fef4690}
+      \strng{fullhash}{c282378565b723c21ffb4916942d3326}
+      \strng{fullhashraw}{c282378565b723c21ffb4916942d3326}
+      \strng{bibnamehash}{c282378565b723c21ffb4916942d3326}
+      \strng{authorbibnamehash}{c282378565b723c21ffb4916942d3326}
+      \strng{authornamehash}{3df05c27e4a29249525905300fef4690}
+      \strng{authorfullhash}{c282378565b723c21ffb4916942d3326}
+      \strng{authorfullhashraw}{c282378565b723c21ffb4916942d3326}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 11th International Conference on Natural Language Processing}
+      \field{title}{A Sandhi Splitter for Malayalam}
+      \field{year}{2014}
+      \field{pages}{156\bibrangedash 161}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://aclanthology.org/W14-5125/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/W14-5125/
+      \endverb
+    \endentry
+    \entry{brahma2025morphtok}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=0efcc3f2bcf0e1a73b0f5691c460af98}{%
+           family={Brahma},
+           familyi={B\bibinitperiod},
+           given={Maharaj},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cb8fbd26eb701321ee7d8db8662c04a3}{%
+           family={Karthika},
+           familyi={K\bibinitperiod},
+           given={N.\bibnamedelimi J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3248def18e19309d897bce28412cf519}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Atul\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=be1fd407255a92320e9a5caafd741490}{%
+           family={Adiga},
+           familyi={A\bibinitperiod},
+           given={Devaraja},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d4ae558af13cd63f0c2d51fc1c3c93e7}{%
+           family={Bhate},
+           familyi={B\bibinitperiod},
+           given={Smruti},
+           giveni={S\bibinitperiod}}}%
+        {{hash=106fd4cb860cb09d04b330642aca41dc}{%
+           family={Ramakrishnan},
+           familyi={R\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+        {{hash=61317eb94616a0b38aee4a7066ecb2f4}{%
+           family={Saluja},
+           familyi={S\bibinitperiod},
+           given={Rohit},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0321410c9b725817c4e4020717bb10dd}{%
+           family={Desarkar},
+           familyi={D\bibinitperiod},
+           given={Maunendra\bibnamedelima Sankar},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8616708a4c558e2a7e08da2a4f1b6d5d}
+      \strng{fullhash}{890c713d55c976b2cd0ff2f94c65d2af}
+      \strng{fullhashraw}{890c713d55c976b2cd0ff2f94c65d2af}
+      \strng{bibnamehash}{8616708a4c558e2a7e08da2a4f1b6d5d}
+      \strng{authorbibnamehash}{8616708a4c558e2a7e08da2a4f1b6d5d}
+      \strng{authornamehash}{8616708a4c558e2a7e08da2a4f1b6d5d}
+      \strng{authorfullhash}{890c713d55c976b2cd0ff2f94c65d2af}
+      \strng{authorfullhashraw}{890c713d55c976b2cd0ff2f94c65d2af}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv}
+      \field{title}{MorphTok: Morphologically Grounded Tokenization for Indian Languages}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.48550/arXiv.2504.10335
+      \endverb
+      \verb{eprint}
+      \verb 2504.10335
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2504.10335
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2504.10335
+      \endverb
+    \endentry
+    \entry{token_tax_2025}{article}{}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv}
+      \field{title}{The Token Tax: Systematic Bias in Multilingual Tokenization}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2509.05486
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2509.05486
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2509.05486
+      \endverb
+    \endentry
+    \entry{self_attention_constant_2026}{article}{}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv}
+      \field{title}{Self-Attention at Constant Cost per Token via Symmetry-Aware Taylor Approximation}
+      \field{year}{2026}
+      \verb{eprint}
+      \verb 2602.00294
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2602.00294
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2602.00294
+      \endverb
+    \endentry
+    \entry{asudevi2019malayalam}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=65a94ba42bd0eef24d672c389c20bca4}{%
+           family={Asudevi},
+           familyi={A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Konstanz}%
+      }
+      \strng{namehash}{65a94ba42bd0eef24d672c389c20bca4}
+      \strng{fullhash}{65a94ba42bd0eef24d672c389c20bca4}
+      \strng{fullhashraw}{65a94ba42bd0eef24d672c389c20bca4}
+      \strng{bibnamehash}{65a94ba42bd0eef24d672c389c20bca4}
+      \strng{authorbibnamehash}{65a94ba42bd0eef24d672c389c20bca4}
+      \strng{authornamehash}{65a94ba42bd0eef24d672c389c20bca4}
+      \strng{authorfullhash}{65a94ba42bd0eef24d672c389c20bca4}
+      \strng{authorfullhashraw}{65a94ba42bd0eef24d672c389c20bca4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Malayalam Morphosyntax: Inflectional Features and their Acquisition}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://ojs.ub.uni-konstanz.de/jsal/dissertations/thesis-signed.pdf
+      \endverb
+      \verb{url}
+      \verb https://ojs.ub.uni-konstanz.de/jsal/dissertations/thesis-signed.pdf
+      \endverb
+    \endentry
+    \entry{nimal2017malayalamnounverb}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=442e61ffdaf672e119e70524dcd8e303}{%
+           family={Nimal},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7082a5e6b6efaf238b654cbf4cec3730}
+      \strng{fullhash}{7082a5e6b6efaf238b654cbf4cec3730}
+      \strng{fullhashraw}{7082a5e6b6efaf238b654cbf4cec3730}
+      \strng{bibnamehash}{7082a5e6b6efaf238b654cbf4cec3730}
+      \strng{authorbibnamehash}{7082a5e6b6efaf238b654cbf4cec3730}
+      \strng{authornamehash}{7082a5e6b6efaf238b654cbf4cec3730}
+      \strng{authorfullhash}{7082a5e6b6efaf238b654cbf4cec3730}
+      \strng{authorfullhashraw}{7082a5e6b6efaf238b654cbf4cec3730}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{i-Manager's Journal on Pattern Recognition}
+      \field{title}{Malayalam Noun and Verb Morphological Analyzer}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://ijournals.in/wp-content/uploads/2017/07/1.2804-Nimal.pdf
+      \endverb
+      \verb{url}
+      \verb https://ijournals.in/wp-content/uploads/2017/07/1.2804-Nimal.pdf
+      \endverb
+    \endentry
+    \entry{asudevi2023acquisition}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=65a94ba42bd0eef24d672c389c20bca4}{%
+           family={Asudevi},
+           familyi={A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{992358043a60aa7fc298e673576cec9e}
+      \strng{fullhash}{992358043a60aa7fc298e673576cec9e}
+      \strng{fullhashraw}{992358043a60aa7fc298e673576cec9e}
+      \strng{bibnamehash}{992358043a60aa7fc298e673576cec9e}
+      \strng{authorbibnamehash}{992358043a60aa7fc298e673576cec9e}
+      \strng{authornamehash}{992358043a60aa7fc298e673576cec9e}
+      \strng{authorfullhash}{992358043a60aa7fc298e673576cec9e}
+      \strng{authorfullhashraw}{992358043a60aa7fc298e673576cec9e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{First Language}
+      \field{title}{Acquisition of Malayalam inflections: Complexity of morphosyntactic rules and its impact on developing grammars}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/10.1177/01427237221113978
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/10.1177/01427237221113978
+      \endverb
+    \endentry
+    \entry{kerala1971scriptreform}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=55dcf2498e93d47ddfb699f35ed6f449}{%
+           family={{Government of Kerala}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{55dcf2498e93d47ddfb699f35ed6f449}
+      \strng{fullhash}{55dcf2498e93d47ddfb699f35ed6f449}
+      \strng{fullhashraw}{55dcf2498e93d47ddfb699f35ed6f449}
+      \strng{bibnamehash}{55dcf2498e93d47ddfb699f35ed6f449}
+      \strng{authorbibnamehash}{55dcf2498e93d47ddfb699f35ed6f449}
+      \strng{authornamehash}{55dcf2498e93d47ddfb699f35ed6f449}
+      \strng{authorfullhash}{55dcf2498e93d47ddfb699f35ed6f449}
+      \strng{authorfullhashraw}{55dcf2498e93d47ddfb699f35ed6f449}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.unicode.org/L2/L2008/08039-kerala-order.pdf}}
+      \field{note}{Government Order G.O. (P) 37/71/Edn., dated 23 March 1971}
+      \field{title}{Malayalam Script- Adoption of New Script for Use---Orders Issued}
+      \field{year}{1971}
+    \endentry
+    \entry{sennrich2016neural}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=dbb9225ae208939ef2c5eec31d16922a}{%
+           family={Sennrich},
+           familyi={S\bibinitperiod},
+           given={Rico},
+           giveni={R\bibinitperiod}}}%
+        {{hash=34bf39cab57292ffa4ca1f5a851b64f0}{%
+           family={Haddow},
+           familyi={H\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bf98d70c7173a46aa44c19b423633312}{%
+           family={Birch},
+           familyi={B\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{31dfc645287253bc6e6016ef2d9f0894}
+      \strng{fullhash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{fullhashraw}{e309ceeb2dd0153b77437835a108df80}
+      \strng{bibnamehash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authorbibnamehash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authornamehash}{31dfc645287253bc6e6016ef2d9f0894}
+      \strng{authorfullhash}{e309ceeb2dd0153b77437835a108df80}
+      \strng{authorfullhashraw}{e309ceeb2dd0153b77437835a108df80}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}
+      \field{title}{Neural Machine Translation of Rare Words with Subword Units}
+      \field{year}{2016}
+      \field{pages}{1715\bibrangedash 1725}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.18653/v1/P16-1162
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/P16-1162/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/P16-1162/
+      \endverb
+    \endentry
+    \entry{kudo2018sentencepiece}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=ea1d04e9781edc1ab4ccafb0d8ff5179}{%
+           family={Kudo},
+           familyi={K\bibinitperiod},
+           given={Taku},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4398933b4ac4c83329c4fd6f1a079eef}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{da0878991af2083992357c0b93024f16}
+      \strng{fullhash}{da0878991af2083992357c0b93024f16}
+      \strng{fullhashraw}{da0878991af2083992357c0b93024f16}
+      \strng{bibnamehash}{da0878991af2083992357c0b93024f16}
+      \strng{authorbibnamehash}{da0878991af2083992357c0b93024f16}
+      \strng{authornamehash}{da0878991af2083992357c0b93024f16}
+      \strng{authorfullhash}{da0878991af2083992357c0b93024f16}
+      \strng{authorfullhashraw}{da0878991af2083992357c0b93024f16}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing: System Demonstrations}
+      \field{title}{SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing}
+      \field{year}{2018}
+      \field{pages}{66\bibrangedash 71}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.18653/v1/D18-2012
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/D18-2012/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/D18-2012/
+      \endverb
+    \endentry
+    \entry{rana2025indicsupertokenizer}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=90ad1f64489b9c6a237a6d47c76fdf46}{%
+           family={Rana},
+           familyi={R\bibinitperiod},
+           given={Souvik},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fb93da6161d5b2c2a89cc42ab181a47e}{%
+           family={Menezes},
+           familyi={M\bibinitperiod},
+           given={Arul},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5146db8e8fa0b4415c44749090d95fd0}{%
+           family={Kulkarni},
+           familyi={K\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9d912135a8198ce3ca518e1823fecc9e}{%
+           family={Khatri},
+           familyi={K\bibinitperiod},
+           given={Chandra},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dcb75370199e37a61a36d3e37c7a24e2}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Shubham},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0dca0f6f5c4cc07bc675d09c14284fef}
+      \strng{fullhash}{86eb49a1dd100e4a41ea59bfe5eba00c}
+      \strng{fullhashraw}{86eb49a1dd100e4a41ea59bfe5eba00c}
+      \strng{bibnamehash}{86eb49a1dd100e4a41ea59bfe5eba00c}
+      \strng{authorbibnamehash}{86eb49a1dd100e4a41ea59bfe5eba00c}
+      \strng{authornamehash}{0dca0f6f5c4cc07bc675d09c14284fef}
+      \strng{authorfullhash}{86eb49a1dd100e4a41ea59bfe5eba00c}
+      \strng{authorfullhashraw}{86eb49a1dd100e4a41ea59bfe5eba00c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2511.03237}
+      \field{title}{An Optimized Tokenizer for Indic Multilingual LLMs}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2511.03237
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2511.03237
+      \endverb
+    \endentry
+    \entry{sharma2025multilingual}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=66e5830d83f04f3330000ce4e3295b4e}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Dipti},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f421a62dc78901c962886b791ed8088}
+      \strng{fullhash}{0f421a62dc78901c962886b791ed8088}
+      \strng{fullhashraw}{0f421a62dc78901c962886b791ed8088}
+      \strng{bibnamehash}{0f421a62dc78901c962886b791ed8088}
+      \strng{authorbibnamehash}{0f421a62dc78901c962886b791ed8088}
+      \strng{authornamehash}{0f421a62dc78901c962886b791ed8088}
+      \strng{authorfullhash}{0f421a62dc78901c962886b791ed8088}
+      \strng{authorfullhashraw}{0f421a62dc78901c962886b791ed8088}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2506.17789}
+      \field{title}{Multilingual Tokenization through the Lens of Indian Languages}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2506.17789
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2506.17789
+      \endverb
+    \endentry
+    \entry{lundin2025tokentax}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=58e3f59ed9c1ce41b07e0d84c8c87c04}{%
+           family={Lundin},
+           familyi={L\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b533ccb7abdc2df0a1aa1aa5e12f7154}
+      \strng{fullhash}{b533ccb7abdc2df0a1aa1aa5e12f7154}
+      \strng{fullhashraw}{b533ccb7abdc2df0a1aa1aa5e12f7154}
+      \strng{bibnamehash}{b533ccb7abdc2df0a1aa1aa5e12f7154}
+      \strng{authorbibnamehash}{b533ccb7abdc2df0a1aa1aa5e12f7154}
+      \strng{authornamehash}{b533ccb7abdc2df0a1aa1aa5e12f7154}
+      \strng{authorfullhash}{b533ccb7abdc2df0a1aa1aa5e12f7154}
+      \strng{authorfullhashraw}{b533ccb7abdc2df0a1aa1aa5e12f7154}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2509.05486}
+      \field{title}{The Token Tax: Systematic Bias in Multilingual Tokenization}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2509.05486
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2509.05486
+      \endverb
+    \endentry
+    \entry{ahia2025tokenizationbias}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=b9f5550c76b7594b0040d1ffe856a07b}{%
+           family={Ahia},
+           familyi={A\bibinitperiod},
+           given={Orevaoghene},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad59c64e801d7e4cdcc89cd4e112beb0}
+      \strng{fullhash}{ad59c64e801d7e4cdcc89cd4e112beb0}
+      \strng{fullhashraw}{ad59c64e801d7e4cdcc89cd4e112beb0}
+      \strng{bibnamehash}{ad59c64e801d7e4cdcc89cd4e112beb0}
+      \strng{authorbibnamehash}{ad59c64e801d7e4cdcc89cd4e112beb0}
+      \strng{authornamehash}{ad59c64e801d7e4cdcc89cd4e112beb0}
+      \strng{authorfullhash}{ad59c64e801d7e4cdcc89cd4e112beb0}
+      \strng{authorfullhashraw}{ad59c64e801d7e4cdcc89cd4e112beb0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing}
+      \field{title}{Tokenization and Representation Biases in Multilingual Models on Language Understanding}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2025.emnlp-main.1224.pdf
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2025.emnlp-main.1224.pdf
+      \endverb
+    \endentry
+    \entry{doddapaneni2023indicbertv2}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=4fa628070a7f042c83d8485903ad5f78}{%
+           family={Doddapaneni},
+           familyi={D\bibinitperiod},
+           given={Sumanth},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bc15c4d5a4904232ac52eb8e0d99728c}{%
+           family={Aralikatte},
+           familyi={A\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=68cc8272f4fd8dfbaefcc15b217ffd0d}{%
+           family={Ramesh},
+           familyi={R\bibinitperiod},
+           given={Gowtham},
+           giveni={G\bibinitperiod}}}%
+        {{hash=581003ef495e8dc3e4a69644bb8cc113}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Shreya},
+           giveni={S\bibinitperiod}}}%
+        {{hash=620c69e905e599a451eba3f56f8e43f0}{%
+           family={Khapra},
+           familyi={K\bibinitperiod},
+           given={Mitesh\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f9d74242d4f01616604741e5cab07f4b}{%
+           family={Kunchukuttan},
+           familyi={K\bibinitperiod},
+           given={Anoop},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7a520395dba3ba7589dc303f1bde21b8}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Pratyush},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{5ee34ea9f9e06cdcb9bd4067493a2e28}
+      \strng{fullhash}{ad59766ca263a544bba904d34fc5e586}
+      \strng{fullhashraw}{ad59766ca263a544bba904d34fc5e586}
+      \strng{bibnamehash}{5ee34ea9f9e06cdcb9bd4067493a2e28}
+      \strng{authorbibnamehash}{5ee34ea9f9e06cdcb9bd4067493a2e28}
+      \strng{authornamehash}{5ee34ea9f9e06cdcb9bd4067493a2e28}
+      \strng{authorfullhash}{ad59766ca263a544bba904d34fc5e586}
+      \strng{authorfullhashraw}{ad59766ca263a544bba904d34fc5e586}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}
+      \field{title}{Towards Leaving No Indic Language Behind: Building Monolingual Corpora, Benchmark and Models for Indic Languages}
+      \field{year}{2023}
+      \field{pages}{12402\bibrangedash 12426}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.18653/v1/2023.acl-long.693
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2023.acl-long.693
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2023.acl-long.693
+      \endverb
+    \endentry
+    \entry{hu2021lora}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=e6a95d07b8ae7f14e4eb777c6980a059}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Edward\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1701c0f05662e92cf52cfc8c16437496}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Yelong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ab0fdbc1586103dda7ac5e0852e5b2c3}{%
+           family={Wallis},
+           familyi={W\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=eaa5cc98b7f19b4ce07c832213a13b9d}{%
+           family={Allen-Zhu},
+           familyi={A\bibinithyphendelim Z\bibinitperiod},
+           given={Zeyuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=0d2c91b24f885b22d373a892a768abc8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuanzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b654b88ecd4c3ff1ea29da275bce701c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=55f210233ac686af68eba11a97bd84e2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=05d71a9c5e7ac79222e01a55af0ccb93}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Weizhu},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{d775178c34083951ab1e07df578582c3}
+      \strng{fullhash}{08f4b49735d5d145be00bc9c07f38975}
+      \strng{fullhashraw}{08f4b49735d5d145be00bc9c07f38975}
+      \strng{bibnamehash}{d775178c34083951ab1e07df578582c3}
+      \strng{authorbibnamehash}{d775178c34083951ab1e07df578582c3}
+      \strng{authornamehash}{d775178c34083951ab1e07df578582c3}
+      \strng{authorfullhash}{08f4b49735d5d145be00bc9c07f38975}
+      \strng{authorfullhashraw}{08f4b49735d5d145be00bc9c07f38975}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2106.09685}
+      \field{title}{LoRA: Low-Rank Adaptation of Large Language Models}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2106.09685
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2106.09685
+      \endverb
+    \endentry
+    \entry{sanh2019distilbert}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=b17a6e4a2e8a51a0d77017d50c2ef700}{%
+           family={Sanh},
+           familyi={S\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=4996c576ebaf91c8655cee3341764e3b}{%
+           family={Debut},
+           familyi={D\bibinitperiod},
+           given={Lysandre},
+           giveni={L\bibinitperiod}}}%
+        {{hash=79bf176bccb31f7489fcf1895b225764}{%
+           family={Chaumond},
+           familyi={C\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c34c67badfd5b3624027e9c8c77a69f6}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c45110f1218dd76df03ef800db8a970}
+      \strng{fullhash}{dc0afc633047d6fca100f460cf89f831}
+      \strng{fullhashraw}{dc0afc633047d6fca100f460cf89f831}
+      \strng{bibnamehash}{dc0afc633047d6fca100f460cf89f831}
+      \strng{authorbibnamehash}{dc0afc633047d6fca100f460cf89f831}
+      \strng{authornamehash}{9c45110f1218dd76df03ef800db8a970}
+      \strng{authorfullhash}{dc0afc633047d6fca100f460cf89f831}
+      \strng{authorfullhashraw}{dc0afc633047d6fca100f460cf89f831}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1910.01108}
+      \field{title}{DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1910.01108
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1910.01108
+      \endverb
+    \endentry
+    \entry{asgari2025morphbpe}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=e4a8db5d5f58cc8365efaf61d072e362}{%
+           family={Asgari},
+           familyi={A\bibinitperiod},
+           given={Ehsaneddin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=aeabac02a2dfed257b968b89004cc0cb}{%
+           family={Kheirkhah},
+           familyi={K\bibinitperiod},
+           given={Taha},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{e131396878ce33d8a3caad4ec58f8b45}
+      \strng{fullhash}{e131396878ce33d8a3caad4ec58f8b45}
+      \strng{fullhashraw}{e131396878ce33d8a3caad4ec58f8b45}
+      \strng{bibnamehash}{e131396878ce33d8a3caad4ec58f8b45}
+      \strng{authorbibnamehash}{e131396878ce33d8a3caad4ec58f8b45}
+      \strng{authornamehash}{e131396878ce33d8a3caad4ec58f8b45}
+      \strng{authorfullhash}{e131396878ce33d8a3caad4ec58f8b45}
+      \strng{authorfullhashraw}{e131396878ce33d8a3caad4ec58f8b45}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2502.00894}
+      \field{title}{MorphBPE: A Morpho-Aware Tokenizer Bridging Linguistic Complexity for Efficient LLM Training Across Morphologies}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2502.00894
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2502.00894
+      \endverb
+    \endentry
+    \entry{vemula2025rethinking}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=1be161cf72856eaedadd8d5c4e4401cc}{%
+           family={Vemula},
+           familyi={V\bibinitperiod},
+           given={Saketh\bibnamedelima Reddy},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5fd7707f0735771faceaa22638784ffc}{%
+           family={Dandapat},
+           familyi={D\bibinitperiod},
+           given={Sandipan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=66e5830d83f04f3330000ce4e3295b4e}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Dipti},
+           giveni={D\bibinitperiod}}}%
+        {{hash=20d225d7822e173e7cabaa8850745f99}{%
+           family={Krishnamurthy},
+           familyi={K\bibinitperiod},
+           given={Parameswari},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6bb554871ad4a4fcb440243d56d387ab}
+      \strng{fullhash}{dd72de6065138503fd777f98d9a2c415}
+      \strng{fullhashraw}{dd72de6065138503fd777f98d9a2c415}
+      \strng{bibnamehash}{dd72de6065138503fd777f98d9a2c415}
+      \strng{authorbibnamehash}{dd72de6065138503fd777f98d9a2c415}
+      \strng{authornamehash}{6bb554871ad4a4fcb440243d56d387ab}
+      \strng{authorfullhash}{dd72de6065138503fd777f98d9a2c415}
+      \strng{authorfullhashraw}{dd72de6065138503fd777f98d9a2c415}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics: Student Research Workshop}
+      \field{title}{Rethinking Tokenization for Rich Morphology: The Dominance of Unigram over BPE and Morphological Alignment}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2025.ijcnlp-srw.20/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2025.ijcnlp-srw.20/
+      \endverb
+    \endentry
+    \entry{adelani2023sib200}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=878a14b5961891e2bb23bc152b2f802c}{%
+           family={Adelani},
+           familyi={A\bibinitperiod},
+           given={David\bibnamedelima Ifeoluwa},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=fd903bc507de58459375d974764ab4ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a782daecdd11460210964a081b3d5c5d}
+      \strng{fullhash}{a782daecdd11460210964a081b3d5c5d}
+      \strng{fullhashraw}{a782daecdd11460210964a081b3d5c5d}
+      \strng{bibnamehash}{a782daecdd11460210964a081b3d5c5d}
+      \strng{authorbibnamehash}{a782daecdd11460210964a081b3d5c5d}
+      \strng{authornamehash}{a782daecdd11460210964a081b3d5c5d}
+      \strng{authorfullhash}{a782daecdd11460210964a081b3d5c5d}
+      \strng{authorfullhashraw}{a782daecdd11460210964a081b3d5c5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2309.07445}
+      \field{title}{SIB-200: A Simple, Inclusive, and Big Evaluation Dataset for Topic Classification in 200+ Languages and Dialects}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2309.07445
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2309.07445
+      \endverb
+    \endentry
+    \entry{farsi2024dravidian_fakenews_dataset}{dataset}{}{}
+      \name{author}{8}{}{%
+        {{hash=dd7b2e695e5240809ee7e93f1d21c86b}{%
+           family={Farsi},
+           familyi={F\bibinitperiod},
+           given={Salman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4816a4417aa71b91e29b1612ba222696}{%
+           family={Eusha},
+           familyi={E\bibinitperiod},
+           given={Asrarul},
+           giveni={A\bibinitperiod}}}%
+        {{hash=10a75a6971f4e90452a1a9ac3606037e}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Ariful},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c04208804a833311bd3752b3849b229d}{%
+           family={Taher},
+           familyi={T\bibinitperiod},
+           given={Hasan\bibnamedelimb Mesbaul\bibnamedelima Ali},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=981a6b7e9b3f818c62823f16a3976231}{%
+           family={Hossain},
+           familyi={H\bibinitperiod},
+           given={Jawad},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e2a317ee402553e3a87eaad6c5419dbf}{%
+           family={Ahsan},
+           familyi={A\bibinitperiod},
+           given={Shawly},
+           giveni={S\bibinitperiod}}}%
+        {{hash=29a75829c1ce3e87e5043e5d57061fc7}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Avishek},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d4cfbf8ed126b97de159eacac957f432}{%
+           family={Hoque},
+           familyi={H\bibinitperiod},
+           given={Mohammed\bibnamedelima Moshiul},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{e536e8bac9fb24ad738c27433c23ed09}
+      \strng{fullhash}{04e7cacef9ece95d3b30059bd8ce2da6}
+      \strng{fullhashraw}{04e7cacef9ece95d3b30059bd8ce2da6}
+      \strng{bibnamehash}{e536e8bac9fb24ad738c27433c23ed09}
+      \strng{authorbibnamehash}{e536e8bac9fb24ad738c27433c23ed09}
+      \strng{authornamehash}{e536e8bac9fb24ad738c27433c23ed09}
+      \strng{authorfullhash}{04e7cacef9ece95d3b30059bd8ce2da6}
+      \strng{authorfullhashraw}{04e7cacef9ece95d3b30059bd8ce2da6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/Salman1804102/DravidianLangTech-EACL-2024-FakeNews}}
+      \field{note}{Dataset for Fake News Detection in Dravidian Languages (Malayalam) from DravidianLangTech@EACL 2024}
+      \field{title}{DravidianLangTech-EACL 2024 Fake News Dataset}
+      \field{year}{2024}
+    \endentry
+    \entry{dravidianlangtech2024_fakenews}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=c31d966f806bf3e6fa2b01bb6411a000}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={Malliga},
+           giveni={M\bibinitperiod}}}%
+        {{hash=668bf2b2730037f2f603c7940cd92fb8}{%
+           family={Chakravarthi},
+           familyi={C\bibinitperiod},
+           given={Bharathi\bibnamedelima Raja},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{65051936c1aca7c6cb105206f224df78}
+      \strng{fullhash}{65051936c1aca7c6cb105206f224df78}
+      \strng{fullhashraw}{65051936c1aca7c6cb105206f224df78}
+      \strng{bibnamehash}{65051936c1aca7c6cb105206f224df78}
+      \strng{authorbibnamehash}{65051936c1aca7c6cb105206f224df78}
+      \strng{authornamehash}{65051936c1aca7c6cb105206f224df78}
+      \strng{authorfullhash}{65051936c1aca7c6cb105206f224df78}
+      \strng{authorfullhashraw}{65051936c1aca7c6cb105206f224df78}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the DravidianLangTech Workshop at EACL}
+      \field{title}{Overview of the Second Shared Task on Fake News Detection in Dravidian Languages}
+      \field{year}{2024}
+    \endentry
+    \entry{palanikumar2024l3cubeindicnews}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=85f875ab1a342c958013b03d2b9df45c}{%
+           family={Palanikumar},
+           familyi={P\bibinitperiod},
+           given={Vigneshwaran},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{756c05242d536cbda229f36c8a7edb89}
+      \strng{fullhash}{756c05242d536cbda229f36c8a7edb89}
+      \strng{fullhashraw}{756c05242d536cbda229f36c8a7edb89}
+      \strng{bibnamehash}{756c05242d536cbda229f36c8a7edb89}
+      \strng{authorbibnamehash}{756c05242d536cbda229f36c8a7edb89}
+      \strng{authornamehash}{756c05242d536cbda229f36c8a7edb89}
+      \strng{authorfullhash}{756c05242d536cbda229f36c8a7edb89}
+      \strng{authorfullhashraw}{756c05242d536cbda229f36c8a7edb89}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2401.02254}
+      \field{title}{L3Cube-IndicNews: News-based Short Text and Long Document Classification Datasets in Indic Languages}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2401.02254
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2401.02254
+      \endverb
+    \endentry
+    \entry{rijuraj2023wollai}{dataset}{}{}
+      \name{author}{3}{}{%
+        {{hash=63b08c157879a304e497b400ed188393}{%
+           family={Riju\bibnamedelima Raj},
+           familyi={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=194f2b031295a07ef92a463d0ffafce9}{%
+           family={Nair},
+           familyi={N\bibinitperiod},
+           given={Latha\bibnamedelima R.},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=d8678bc3d57633e7310586eb08b7ce33}{%
+           family={Bindu},
+           familyi={B\bibinitperiod},
+           given={V.\bibnamedelimi R.},
+           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mendeley Data}%
+      }
+      \strng{namehash}{a2196cc87d1bf9e154f48ecd0622e18c}
+      \strng{fullhash}{b0780ff89104e89872fbf3c17f9b8faf}
+      \strng{fullhashraw}{b0780ff89104e89872fbf3c17f9b8faf}
+      \strng{bibnamehash}{b0780ff89104e89872fbf3c17f9b8faf}
+      \strng{authorbibnamehash}{b0780ff89104e89872fbf3c17f9b8faf}
+      \strng{authornamehash}{a2196cc87d1bf9e154f48ecd0622e18c}
+      \strng{authorfullhash}{b0780ff89104e89872fbf3c17f9b8faf}
+      \strng{authorfullhashraw}{b0780ff89104e89872fbf3c17f9b8faf}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{WoLLaI: Word Level Language Identification of Malayalam-English Code-Mixed Text}
+      \field{version}{1}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.17632/pn6xjx4zkd.1
+      \endverb
+      \verb{urlraw}
+      \verb https://data.mendeley.com/datasets/pn6xjx4zkd/1
+      \endverb
+      \verb{url}
+      \verb https://data.mendeley.com/datasets/pn6xjx4zkd/1
+      \endverb
+    \endentry
+    \entry{bala2023focalloss}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=5c275a3fdfc8202cba8f0bfb761741f3}{%
+           family={Bala},
+           familyi={B\bibinitperiod},
+           given={Priyanka},
+           giveni={P\bibinitperiod}}}%
+        {{hash=20d225d7822e173e7cabaa8850745f99}{%
+           family={Krishnamurthy},
+           familyi={K\bibinitperiod},
+           given={Parameswari},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6db5c82bfc76b0feb403472db06e55a3}
+      \strng{fullhash}{6db5c82bfc76b0feb403472db06e55a3}
+      \strng{fullhashraw}{6db5c82bfc76b0feb403472db06e55a3}
+      \strng{bibnamehash}{6db5c82bfc76b0feb403472db06e55a3}
+      \strng{authorbibnamehash}{6db5c82bfc76b0feb403472db06e55a3}
+      \strng{authornamehash}{6db5c82bfc76b0feb403472db06e55a3}
+      \strng{authorfullhash}{6db5c82bfc76b0feb403472db06e55a3}
+      \strng{authorfullhashraw}{6db5c82bfc76b0feb403472db06e55a3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of DravidianLangTech 2023}
+      \field{title}{Impact of Focal Loss on Malayalam Fake News Detection}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2023.dravidianlangtech-1.29.pdf
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2023.dravidianlangtech-1.29.pdf
+      \endverb
+    \endentry
+    \entry{jaff2024malayalambert}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=9a5d6fe59f1b50bb5e5d7a4488f05976}{%
+           family={Jaff},
+           familyi={J\bibinitperiod},
+           given={Mersad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f9d6474bd491b5bdb32edc96b3acc7d}
+      \strng{fullhash}{3f9d6474bd491b5bdb32edc96b3acc7d}
+      \strng{fullhashraw}{3f9d6474bd491b5bdb32edc96b3acc7d}
+      \strng{bibnamehash}{3f9d6474bd491b5bdb32edc96b3acc7d}
+      \strng{authorbibnamehash}{3f9d6474bd491b5bdb32edc96b3acc7d}
+      \strng{authornamehash}{3f9d6474bd491b5bdb32edc96b3acc7d}
+      \strng{authorfullhash}{3f9d6474bd491b5bdb32edc96b3acc7d}
+      \strng{authorfullhashraw}{3f9d6474bd491b5bdb32edc96b3acc7d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of DravidianLangTech 2024}
+      \field{title}{Fake News Classification Using Malayalam-BERT}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2024.dravidianlangtech-1.37.pdf
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2024.dravidianlangtech-1.37.pdf
+      \endverb
+    \endentry
+    \entry{ansar2024finetuned}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=a9348a1250407b94413a831f5995ad42}{%
+           family={Ansar},
+           familyi={A\bibinitperiod},
+           given={Muhammed},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a265125c741bc9e3142f04263a9c4ca5}
+      \strng{fullhash}{a265125c741bc9e3142f04263a9c4ca5}
+      \strng{fullhashraw}{a265125c741bc9e3142f04263a9c4ca5}
+      \strng{bibnamehash}{a265125c741bc9e3142f04263a9c4ca5}
+      \strng{authorbibnamehash}{a265125c741bc9e3142f04263a9c4ca5}
+      \strng{authornamehash}{a265125c741bc9e3142f04263a9c4ca5}
+      \strng{authorfullhash}{a265125c741bc9e3142f04263a9c4ca5}
+      \strng{authorfullhashraw}{a265125c741bc9e3142f04263a9c4ca5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of DravidianLangTech 2024}
+      \field{title}{Fake News Detection in Malayalam Language Leveraging Fine-Tuned Language Models}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2024.dravidianlangtech-1.29.pdf
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2024.dravidianlangtech-1.29.pdf
+      \endverb
+    \endentry
+    \entry{likha2025fakenews}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=90de379215cb4ce351c5851af8c938ac}{%
+           family={Likha},
+           familyi={L\bibinitperiod},
+           given={O.\bibnamedelimi V.},
+           giveni={O\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9c0ef8e984aa783a400eff013f12a23d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi Sachin},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c9f540042d58e300e195378296fc02bc}{%
+           family={Mohan},
+           familyi={M\bibinitperiod},
+           given={Neethu},
+           giveni={N\bibinitperiod}}}%
+        {{hash=07494a7ff0ae193505aebac78a5bc3a6}{%
+           family={Sikha},
+           familyi={S\bibinitperiod},
+           given={O.\bibnamedelimi K.},
+           giveni={O\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{a18cfcf8ca7d5e7c2b256240733a0109}
+      \strng{fullhash}{3e6e002d39609976e3d52b34001417de}
+      \strng{fullhashraw}{3e6e002d39609976e3d52b34001417de}
+      \strng{bibnamehash}{3e6e002d39609976e3d52b34001417de}
+      \strng{authorbibnamehash}{3e6e002d39609976e3d52b34001417de}
+      \strng{authornamehash}{a18cfcf8ca7d5e7c2b256240733a0109}
+      \strng{authorfullhash}{3e6e002d39609976e3d52b34001417de}
+      \strng{authorfullhashraw}{3e6e002d39609976e3d52b34001417de}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{note}{Volume, pages, and DOI to be verified from IEEE Xplore}
+      \field{title}{Fake News and Offensive Content Detection in Malayalam Using Explainable Transformer Models}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/11207609/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/11207609/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
